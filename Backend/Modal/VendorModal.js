@@ -27,11 +27,9 @@ const VendorSchema = new Schema({
         type: Number,
         required: true
     },
-    ProductDetails: {
+    product: {
         type: String,
-    },
-    ProductImg: {
-        type: String,
+        required: true
     }
 });
 
