@@ -6,6 +6,7 @@ const upload = multer({ dest: 'uploads/' })
 router.post('/', upload.array('files', 12), async (req, res) => {
     const data = req.body
     console.log(data)
+    console.log(req.files)
     const { name, email, first_address, address, tel, companyNo } = data
     const store = await vendor.create({ name: name, email: email, streetAddress: first_address, landmark: address, contactNumber: Number(tel), companyRegisterationNumber: Number(companyNo) })
     res.send(store)
