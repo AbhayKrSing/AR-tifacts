@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const connect = () => {
     try {
-        mongoose.connect(process.env.MONGO_URL, {
+        mongoose.connect("mongodb+srv://kabhay849:M3w4LpDTgtaba6Uj@cluster0.9ajmeor.mongodb.net/?retryWrites=true&w=majority", {
         }).then((conn) => {
             console.log(`MongoDB connected : ${conn.connection.host}`.blue.bold.underline)
         })

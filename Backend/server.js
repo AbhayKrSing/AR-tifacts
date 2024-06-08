@@ -18,8 +18,8 @@ app.get('/', async (req, res) => {
     }
 })
 
-app.listen(process.env.SERVER_HOST || 5000, () => {
-    console.log(`Server is running on ${process.env.SERVER_HOST}`.yellow.bold)
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`Server is running on ${process.env.PORT || 5000}`.yellow.bold)
 })
 
 
