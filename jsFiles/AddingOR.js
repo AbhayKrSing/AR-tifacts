@@ -15,7 +15,7 @@ function convertURIToImageData(URI) {              //convertQrCodeImageURI into 
 }
 
 const Run = async () => {
-    const res = await fetch('http://localhost:5000/')    //fetching all vandor data from mongodb
+    const res = await fetch('https://ar-tifacts.onrender.com/')    //fetching all vandor data from mongodb
     const data = await res.json()
     console.log(data)
     // var URI = data[0].QRImgURI;

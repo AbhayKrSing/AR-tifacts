@@ -23,7 +23,7 @@ document.getElementById('Submit').onclick = async function (e) {
             productImg = data.url
             console.log(productImg)
         }
-        const response = await fetch('http://localhost:5000/vendor', {
+        const response = await fetch('https://ar-tifacts.onrender.com/vendor', {
             method: 'POST',
             body: JSON.stringify({
                 name: name,
